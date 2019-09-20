@@ -1,0 +1,9 @@
+/.tmp_versions/*
+/mcspoof
+/modules.order
+/Module.symvers
+/.mcspoof.*
+/*.o
+/*.ko
+/*.mod.c
+
