@@ -12,9 +12,9 @@ What happened is after a certain amount of minutes the FDB entries are cleaned u
 
 If you want to change from router to AP more smoothly you will need to apply some fix. I have 2 solutions for this problem. 
 
-1. [FDB Deamon](https://github.com/ericwoud/bridgefdbd) It deletes the MAC address from the FDB on all bridges whenever a wifi client connects/disconnects to hostapd for a wifi connection. You need to be able to install the bridgefdbd program on your AP AND also on your wireless router. Your wifi client gets the same MAC and IP number on router and AP. There can also be no ethernet switch between the router an AP's, becasue the switch's FDB does not get cleaned up.
+1. [FDB Deamon](https://github.com/ericwoud/bridgefdbd) It deletes the MAC address from the FDB on all bridges whenever a wifi client connects/disconnects to hostapd for a wifi connection. You need to be able to install the bridgefdbd program on your AP AND also on your wireless router. Your wifi client gets the same MAC and IP number on router and AP. There can also be no ethernet switch between the router an AP's, because the switch's FDB does not get cleaned up.
 
-2. [Mc Spoof](https://github.com/ericwoud/mcspoof) It applies a technique called MAC spoofing. Your wifi client gets a different MAC and IP number on the wireless router then on the AP. It adds a fixed number to the mac address of the wifi client. You only need to install it on all AP's and wireless router, except one, usually your wireless router. If you cannot install custom software on your wireless router, this is the way to go. It is however more of a hack and is likely to break more easily. However, it is possible to have an ethernet switch between the router ans AP's.
+2. [Mc Spoof](https://github.com/ericwoud/mcspoof) It applies a technique called MAC spoofing. Your wifi client gets a different MAC and IP number on the wireless router then on the AP. It adds a fixed number to the mac address of the wifi client. You only need to install it on all AP's and wireless router, except one, usually your wireless router. If you cannot install custom software on your wireless router, this is the way to go. It is however more of a hack and is likely to break more easily. However, it is possible to have an ethernet switch between the router and AP's.
 
 ## Getting Started with Mc Spoof
 
